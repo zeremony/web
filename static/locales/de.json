@@ -1,0 +1,28 @@
+{
+  "website":{
+    "title": "Zeremony"
+  },
+  "nav":{
+    "home": "Startseite",
+    "news": "Aktuelles",
+    "dates": "Termine",
+    "band": "Band",
+    "media": "Media",
+    "press": "Pressestimmen",
+    "contact": "Kontakt"
+  },
+  "about_zeremony":{
+    "about_zeremony": "Über Zeremony",
+    "des": "Zeremony schicken euch mit ihrem Sound zurück in die 70er Jahre als das Leben aus vollbusigen Hexen bestand die nachts durch dunkle Wälder streiften, Biker die Straßen runter donnerten und es jeden Tag Bier zum Frühstück gab. Mit ihrem Hammond Orgel Drive, dem Grove der Drums, verzerrten Gitarrensound und dynamischen Vocals führen die drei Jungs die Tradition der Rockmusik fort."
+  },
+  "press":{
+    "press": "Pressestimmen"
+  },
+  "link":{
+    "link": "Band"
+  },
+  "contact":{
+    "contact": "Kontakt"
+  }
+
+}

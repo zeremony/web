@@ -1,0 +1,52 @@
+<div class="row">
+    <div class="col-lg-12 text-center">
+        <div class="navy-line"></div>
+        <h1>Tour Dates</h1>
+    </div>
+</div>
+
+<div class="row">
+    <div class="col-lg-8 col-lg-offset-2">
+        <div class="wrapper wrapper-content animated fadeInRight">
+			
+			
+			{% capture cyear %}{{ site.time | date: '%Y' }}{% endcapture %}
+			{% capture lyear %}{{ site.time | date: '%Y' | minus:1 }}{% endcapture %}
+			{% capture nyear %}{{ site.time | date: '%Y' | plus:1 }}{% endcapture %}
+			{% capture cmonth %}{{ site.time | date: "%m"}}{% endcapture %}
+			{% capture lmonth %}{{ site.time | date: "%m"  | minus:1 }}{% endcapture %}
+			{% capture nmonth %}{{ site.time | date: "%m"  | plus:1 }}{% endcapture %}
+			
+
+			{% assign sorted = (site.categories.tour | sort: 'when')  %}
+			{% for post in sorted %}
+			{% capture year %}{{post.when | date: "%Y"}}{% endcapture %}
+			{% capture month %}{{post.when | date: "%m"}}{% endcapture %}
+			{% assign show = false %}
+			{% assign bold = false %}
+			{% if year == cyear %}{% assign show = true %}{% endif %}
+			{% if year == lyear and month >= '06' %}{% assign show = true %}{% endif %}
+			{% if year == nyear and month <= '06' %}{% assign show = true %}{% endif %}
+			
+			{% if year == cyear and month == cmonth %}{% assign bold = true %}{% endif %}
+			{% if year == cyear and month == nmonth %}{% assign bold = true %}{% endif %}
+			
+			{% if show == true%}
+            <div class="{% if bold == true %}text-navy {% endif %}vote-item">
+                <div class="row">
+                    <div class="col-md-10">
+                        <div class="vote-actions">
+                        </div>
+							<h2 {% if bold == true %}class="font-bold"{% endif %}>{{ post.when | date: "%-d %b %Y %R Uhr" }} {{ post.town }} @ {{ post.venue }}</h2>
+
+                        <span class="vote-info"></span>{{ post.desc }}
+
+                    </div>
+                </div>
+            </div>
+              {% endif %}
+            {% endfor %}
+        </div>
+    </div>
+
+</div>

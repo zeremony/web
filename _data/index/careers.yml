@@ -1,0 +1,26 @@
+# careers section data
+# if you don't have language feature(language.yml is empty), ignore "i18n" items
+- name:
+    detail: Classic Rock Magazin
+    i18n: classic_rock_mag
+  desc:
+    detail: German retro metal that takes you all the way back to 1969 when life was all bosomy witches in capes strolling through dark woods and Hells Angels thundering down lost highways and beer for breakfast every day. It's heavy, is what I'm saying.
+    i18n: company_a_desc
+  icon: fa-plus-square
+
+- name:
+    detail: The Shrieks From Below
+    i18n: the_shrikes_from_below
+  desc:
+    detail: Zeremony reminds me of some of the bands I cut my musical teeth on in the early seventies. [...] The old farts among us will love it, but I would ask some of the younger guys to give it a go to find out what they missed out on 40 odd years ago.
+    i18n: the_shrikes_from_below_desc
+  icon: fa-plus-square
+  
+- name:
+    detail: Stormbringer.at
+    i18n: stormbringer_at
+  desc:
+    detail: ZERMONY lieben Musik, das erkennt man an ihrem Sound und an ihrem gesamten Auftreten. Durch die humorvollen Antworten, die ihre ernsthaften Ambitionen durchscheinen lassen, wird dieses Interview zu einer sehr entspannten und informativen Sache. Und heute Abend läuft dann auch mit Sicherheit "Soul of the Zeremony" durch eure knarzenden Lautsprecher - sofern ihr euch vom Geist der 70er Jahre einlullen lassen mögt.
+    i18n: stormbringer_at_desc
+  icon: fa-plus-square
+  

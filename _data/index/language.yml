@@ -1,0 +1,5 @@
+- locale: de
+  flag: /static/assets/img/flags/Germany.png
+
+- locale: en
+  flag: /static/assets/img/flags/United-States.png

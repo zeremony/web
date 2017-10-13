@@ -1,0 +1,29 @@
+{
+  "website":{
+    "title": "Zeremony"
+  },
+  "nav":{
+    "home": "Home",
+    "news": "News",
+    "dates": "Dates",
+    "band": "Band",
+    "media": "Media",
+    "press": "Press",
+    "contact": "Contact"
+  },
+  "about_zeremony":{
+    "about_zeremony": "About Zeremony",
+    "des": "Zeremony is a Hard Rock Band from Germany and was formed in November 2015 in Würzburg, Bavaria. With the heavy hammond organ drive, groovy drums, fuzzy guitar tone and dynamic vocals, the trio carries on the hard rock tradition in the vein of the early seventies."
+  },
+  "press":{
+    "press": "Press",
+  },
+  "link":{
+    "link": "Band"
+  },
+  "contact": {
+    "contact": "Contact"
+  }
+
+
+}

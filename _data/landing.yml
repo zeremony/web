@@ -1,0 +1,46 @@
+# index page sections
+# custom following lines to edit your index page
+- id: home
+  i18n: nav.home
+  name: Home
+  tpl: about.html
+  css:
+  
+- id: News
+  i18n: nav.news
+  name: News
+  tpl: news.html
+  css: 
+
+- id: Dates
+  i18n: nav.dates
+  name: Dates
+  tpl: dates.html
+  css: 
+
+
+- id: Band
+  i18n: nav.band
+  name: Band
+  tpl: band.html
+  css: 
+  
+- id: Media
+  i18n: nav.media
+  name: Media
+  tpl: media.html
+  css: 
+
+
+- id: press
+  i18n: nav.press
+  name: Press
+  tpl: press.html
+  css: timeline
+
+
+- id: Contact
+  i18n: nav.contact
+  name: Contact
+  tpl: contact.html
+  css: 
