@@ -31,17 +31,16 @@
 			{% if year == lyear and month >= '06' %}{% assign show = true %}{% endif %}
 			{% if year == nyear and month <= '06' %}{% assign show = true %}{% endif %}
 			
-			{% if year == cyear and month == cmonth %}{% assign thismonth = true %}{% endif %}
-			{% if thismonth and day >= cday %}{% assign bold = true %}{% endif %}
-			{% if year == cyear and month == nmonth %}{% assign bold = true %}{% endif %}
-			
 			{% if show == true%}
+			
+
+			
             <div class="{% if bold == true %}text-navy {% endif %}vote-item">
                 <div class="row">
                     <div class="col-md-10">
                         <div class="vote-actions">
                         </div>
-							<h2 {% if bold == true %}class="font-bold"{% endif %}>{{ post.when | date: "%-d %b %Y %R Uhr" }} {{ post.town }} @ {{ post.venue }}</h2>
+							<h2 class="tourdate" title="{{ post.when | date: "%-d %b %Y" }}">{{ post.when | date: "%-d %b %Y %R Uhr" }} {{ post.town }} @ {{ post.venue }}</h2>
 
                         <span class="vote-info"></span>{{ post.desc }}
 
@@ -52,5 +51,22 @@
             {% endfor %}
         </div>
     </div>
+
+	<script>
+
+	var x = document.getElementsByClassName("tourdate");
+	var i;
+	
+	var cstamp = (new Date()).getTime();
+	for (i = 0; i < x.length; i++) {
+		var stamp = Date.parse(x[i].title);
+
+		if (stamp - cstamp > 2592000000 && stamp - cstamp < 7776000000) {
+			x[i].classList.add('text-navy');
+			x[i].classList.add('font-bold');
+		}
+	}
+	</script>
+
 
 </div>
