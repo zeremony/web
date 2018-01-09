@@ -10,14 +10,14 @@
         <div class="wrapper wrapper-content animated fadeInRight">
 
 			{% for post in site.categories.news limit:10 %}
-            <div class="vote-item">
+            <div class="vote-item" style="margin-top: 10px;">
                 <div class="row">
                     <div class="col-md-10">
                         <div class="vote-actions">
                         </div>
 							<h2>{{ post.title }}</h2>
 
-                        {{ content }}
+                        {{ post.content }}
                         <div>
                             <i class="fa fa-clock-o"></i> {{ post.date | date: "%-d %b %Y" }}
                             <i class="fa fa-user"></i> {{ site.author.name }}
@@ -25,6 +25,7 @@
                     </div>
                 </div>
             </div>
+            
             {% endfor %}
         </div>
     </div>
