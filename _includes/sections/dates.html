@@ -19,11 +19,11 @@
 			{% capture nmonth %}{{ site.time | date: "%m"  | plus:1 }}{% endcapture %}
 			
 
-			{% assign sorted = (site.categories.tour | sort: 'when')  %}
+			{% assign sorted = (site.categories.tour | sort: 'date')  %}
 			{% for post in sorted %}
-			{% capture year %}{{post.when | date: "%Y"}}{% endcapture %}
-			{% capture month %}{{post.when | date: "%m"}}{% endcapture %}
-			{% capture day %}{{post.when | date: "%d"}}{% endcapture %}
+			{% capture year %}{{post.date | date: "%Y"}}{% endcapture %}
+			{% capture month %}{{post.date | date: "%m"}}{% endcapture %}
+			{% capture day %}{{post.date | date: "%d"}}{% endcapture %}
 			{% assign show = false %}
 			{% assign bold = false %}
 			{% assign thismonth = false %}
