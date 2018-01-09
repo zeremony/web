@@ -2715,6 +2715,11 @@ body {
   }
 }
 
+.news-collapsed{
+	height: 0px;
+	overflow: hidden;
+}
+
 @media (min-width: 768px) {
   .landing-page {
     .navbar-wrapper {

@@ -1,3 +1,6 @@
+
+
+
 <div class="row">
     <div class="col-lg-12 text-center">
         <div class="navy-line"></div>
@@ -12,12 +15,13 @@
 			{% for post in site.categories.news limit:10 %}
             <div class="vote-item" style="margin-top: 10px;">
                 <div class="row">
-                    <div class="col-md-10">
+                    <div class="col-md-10 news-item">
                         <div class="vote-actions">
-                        </div>
+                       </div>
 							<h2>{{ post.title }}</h2>
-
+						<div class="news-content">
                         {{ post.content }}
+                        </div>
                         <div>
                             <i class="fa fa-clock-o"></i> {{ post.date | date: "%-d %b %Y" }}
                             <i class="fa fa-user"></i> {{ site.author.name }}
@@ -29,5 +33,22 @@
             {% endfor %}
         </div>
     </div>
-
+<script>
+  $(document).ready(function(){
+    $(".news-item").click(function(){
+      if($(".news-content", this).hasClass('news-collapsed')) {
+        $(".news-content", this).removeClass('news-collapsed');
+        $(".news-content", this).animate({
+			height: $(".news-content", this).get(0).scrollHeight
+		}, 1000, function(){
+			$(".news-content", this).height('auto');
+		});
+      } else { 
+        $(".news-content", this).animate({height:'0'},200).addClass('news-collapsed');
+      }
+    });
+    $(".news-item:not(:first)").click();
+    
+  });
+</script>
 </div>
