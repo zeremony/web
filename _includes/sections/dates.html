@@ -61,7 +61,7 @@
 	for (i = 0; i < x.length; i++) {
 		var stamp = Date.parse(x[i].title);
 
-		if (stamp - cstamp > 2592000000 && stamp - cstamp < 7776000000) {
+		if (stamp - cstamp > 0 && stamp - cstamp < 7776000000) {
 			x[i].classList.add('text-navy');
 			x[i].classList.add('font-bold');
 		}
