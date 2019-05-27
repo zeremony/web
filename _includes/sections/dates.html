@@ -35,7 +35,7 @@
 						<div class="col-md-10">
 							<div class="vote-actions">
 							</div>
-								<h2 class="tourdate" title="{{ post.when | date: "%-d %b %Y" }}">{{ post.when | date: "%-d %b %Y %R Uhr" }} {{ post.town }} @ {{ post.venue }}</h2>
+								{{ post.pre }} <h2 class="tourdate" title="{{ post.when | date: "%-d %b %Y" }}">{{ post.when | date: "%-d %b %Y %R Uhr" }} {{ post.town }} @ {{ post.venue }}</h2>{{ post.post }}
 
 							<span class="vote-info"></span>{{ post.desc }}
 
