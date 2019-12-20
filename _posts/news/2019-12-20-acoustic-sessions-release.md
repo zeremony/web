@@ -8,7 +8,7 @@ icon: icon-html
 category: news
 ---
 
-Unser neues <i>Acoustic Sessions</i> Album ist jetzt online! Wir haben ausnahmesweise Orgel und E-Gitarre gegen Akkordeon, Tuba und Akustik Gitarre getauscht und einen bunten Mix von alten und neuen, langsamen und schnellen Songs unplugged aufgenommen.
+Unser neues <i>Acoustic Sessions</i> Album ist jetzt online! Wir haben ausnahmsweise Orgel und E-Gitarre gegen Akkordeon, Tuba und Akustik Gitarre getauscht und einen bunten Mix von alten und neuen, langsamen und schnellen Songs unplugged aufgenommen.
 
 <a href="https://zeremony.bandcamp.com/album/acoustic-sessions"><img src="/static/assets/img/landing/acoustic-sessions_online.png" height="700px" width="700px"/></a><br />
 <a href="https://www.youtube.com/watch?v=W8l11aEG8bA">Acoustic Sessions auf YouTube</a>
