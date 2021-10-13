@@ -2,6 +2,7 @@ $(document).ready(function() {
   var i18nOpts = {
     lng: 'en',
     getAsync: true,
+    useCookie: false,
     fallbackLng: 'en',
     resGetPath: 'static/locales/__lng__.json'
   };

@@ -4,7 +4,7 @@ $(document).ready(function() {
     $.ajax({
         type: "get",
         async: false,
-        url: "https://miniapp.jack003.com/counter.cgi",
+        url: "",
         dataType: "jsonp",
         jsonp: "callback",
         jsonpCallback: "flightHandler",
