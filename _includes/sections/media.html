@@ -1,3 +1,5 @@
+
+
 <div class="container" id="i18_link">
     <div class="row m-b-lg">
         <div class="col-lg-12 text-center">
@@ -6,23 +8,88 @@
         </div>
     </div>
     <div class="row">
-		<div class="text-center team-member"><iframe style="margin-left: auto;margin-right: auto;  display: block; height: 480px; width: 854px;"  class="ignore-css"  width="854" height="480" src="https://www.youtube.com/embed/uFWBX9IMMUM" frameborder="0" allowfullscreen></iframe></div>
+		<div class="text-center team-member" style="width: 854px;margin-left: auto;
+  margin-right: auto;">
+		
+		<h4>Darkness</h4>
+		<div class="youtube"  data-embed="QWv3J5ppdNc"  style="height: 480px; width: 854px;background: black;cursor: pointer;">
+		<span style="display: inline-block;height: 100%;    vertical-align: middle;"></span>
+		<img src="static/assets/img/landing/youtube.png"  class="img-responsive" alt="Zeremony@Youtube" style="display: inline-block;vertical-align: middle;"/>
+		<div>
+		Click to agree to load external content from YouTube.
+		Klicken, um zuzustimmen externen Inhalt von YouTube zu laden.
+		</div>
+		
+		</div>
+		<br />
+		<h4>She Sang A Song To Me</h4>
+		<div class="youtube"  data-embed="uFWBX9IMMUM"  style="height: 480px; width: 854px;background: black;cursor: pointer;">
+		<span style="display: inline-block;height: 100%;    vertical-align: middle;"></span>
+		<img src="static/assets/img/landing/youtube.png"  class="img-responsive" alt="Zeremony@Youtube" style="display: inline-block;vertical-align: middle;"/>
+		<div>
+		Click to agree to load external content from YouTube.
+		Klicken, um zuzustimmen externen Inhalt von YouTube zu laden.
+		</div>
+		
+		</div>
+		<script>
+var youtube = document.querySelectorAll( ".youtube" ); 
+for (var i = 0; i < youtube.length; i++) { 
+    youtube[i].addEventListener( "click", function() {
+ 
+        var iframe = document.createElement( "iframe" );
+ 
+            iframe.setAttribute( "frameborder", "0" );
+            iframe.setAttribute( "allowfullscreen", "" );
+            iframe.setAttribute( "src", "https://www.youtube-nocookie.com/embed/"+ this.dataset.embed +"?rel=0&showinfo=0&autoplay=1" );
+            iframe.setAttribute( "style", "margin-left: auto;margin-right: auto;  display: block; height: 480px; width: 854px;");
+            iframe.setAttribute( "width", "854");
+            iframe.setAttribute( "height", "480");
+            iframe.setAttribute( "class", "ignore-css");
+ 
+            this.innerHTML = "";
+            this.appendChild( iframe );
+    } );
+}
+</script>
+
+<!-- <iframe style="margin-left: auto;margin-right: auto;  display: block; height: 480px; width: 854px;"  class="ignore-css"  width="854" height="480" src="https://www.youtube-nocookie.com/embed/uFWBX9IMMUM" frameborder="0" allowfullscreen></iframe> -->
+
 		<div class="navy-line"></div>
     </div>
     <div class="row">
         <div class="col-sm-4">
             <h4>Spotify</h4>
-            <iframe style="height: 380px; width: 300px;" class="ignore-css" src="https://open.spotify.com/embed?uri=spotify:artist:4ykxFn1wN8U6wLn2MbyzFl" width="300" height="380" frameborder="0" allowtransparency="true"></iframe>
+            <div class="spotify" style="height: 380px; width: 300px;background: black;cursor: pointer;">
+            <div style="width:300px;text-align: center;" >
+Click to agree to load external content from Spotify.
+		Klicken, um zuzustimmen externen Inhalt von Spotify zu laden.
+		</div>
+            </div>
         </div>
+<script>
+var spotify = document.querySelector( ".spotify" ); 
+    spotify.addEventListener( "click", function() { 
+            this.innerHTML = '<iframe style="height: 380px; width: 300px;" class="ignore-css" src="https://open.spotify.com/embed?uri=spotify:artist:4ykxFn1wN8U6wLn2MbyzFl" width="300" height="380" frameborder="0" allowtransparency="true"></iframe>;';
+    } );
+</script>
         <div class="col-sm-4">
             <h4>Buy</h4>
           <!--  <a href="http://store.cdbaby.com/cd/zeremony2" target="cdbaby" style="display:inline-block;background:url(http://CDBaby.name/z/e/zeremony2.jpg) 18px 2px no-repeat, url(https://content.cdbaby.com/img/links/link-artwork-cart-dark-buy-now.png) 0px 0px no-repeat;background-size:175px, 211px;height:233px;width:211px;" title="Zeremony: Soul of the Zeremony" alt="Zeremony: Soul of the Zeremony" ></a>
           -->
-			<iframe style="border: 0; width: 300px; height: 380px;" class="ignore-css"  src="https://bandcamp.com/EmbeddedPlayer/album=2554377685/size=large/bgcol=ffffff/linkcol=0687f5/tracklist=false/transparent=true/" seamless><a href="http://zeremony.bandcamp.com/album/soul-of-the-zeremony">Soul of the Zeremony by Zeremony</a></iframe>
+                  <div class="bandcamp" style="height: 380px; width: 300px;background: black;cursor: pointer;">   <div  style="text-align: center;"> Click to agree to load external content from Bandcamp.
+		Klicken, um zuzustimmen externen Inhalt von Bandcamp zu laden.</div>
+                  <script>
+var spotify = document.querySelector( ".bandcamp" ); 
+    spotify.addEventListener( "click", function() { 
+            this.innerHTML = '<iframe style="border: 0; width: 300px; height: 380px;" class="ignore-css"  src="https://bandcamp.com/EmbeddedPlayer/album=2554377685/size=large/bgcol=ffffff/linkcol=0687f5/tracklist=false/transparent=true/" seamless><a href="http://zeremony.bandcamp.com/album/soul-of-the-zeremony">Soul of the Zeremony by Zeremony</a></iframe>';
+    } );
+</script>
+		</div>	
 		</div>
 		<div class="col-sm-4">
             <h4>Youtube</h4>
-            <a href="https://www.youtube.com/channel/UCRQylQQ1eGTuBLXQ67M830w"><img src="static/assets/img/landing/youtube.png"  class="img-responsive" alt="Zeremony@Youtube" /></a>
+            <a href="https://www.youtube.com/channel/UCRQylQQ1eGTuBLXQ67M830w"><img src="static/assets/img/landing/yt_logo_rgb_light.png"  class="img-responsive" alt="Zeremony@Youtube" /></a>
         </div>
 
     </div>
