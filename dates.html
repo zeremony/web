@@ -1,0 +1,66 @@
+<div class="row">
+    <div class="col-lg-12 text-center">
+        <div class="navy-line"></div>
+        <h1>Tour Dates</h1>
+    </div>
+</div>
+
+<div class="row">
+    <div class="col-lg-8 col-lg-offset-2">
+        <div class="wrapper wrapper-content animated fadeInRight">
+			
+			
+			{% capture cyear %}{{ site.time | date: '%Y' }}{% endcapture %}
+			{% capture cday %}{{ site.time | date: '%d' }}{% endcapture %}
+			{% capture lyear %}{{ site.time | date: '%Y' | minus:1 }}{% endcapture %}
+			{% capture nyear %}{{ site.time | date: '%Y' | plus:1 }}{% endcapture %}
+			{% capture cmonth %}{{ site.time | date: "%m"}}{% endcapture %}
+			{% capture lmonth %}{{ site.time | date: "%m"  | minus:1 }}{% endcapture %}
+			{% capture nmonth %}{{ site.time | date: "%m"  | plus:1 }}{% endcapture %}
+			{% capture now %}{{ site.time | date: "%s"}}{% endcapture %}
+
+			{% assign sorted = (site.categories.tour | sort: 'when')  %}
+			{% for post in sorted %}
+				{% capture year %}{{post.date | date: "%Y"}}{% endcapture %}
+				{% capture month %}{{post.date | date: "%m"}}{% endcapture %}
+				{% capture day %}{{post.date | date: "%d"}}{% endcapture %}
+				{% capture release %}{{post.date | date: "%s"}}{% endcapture %}
+				{% assign show = false %}
+				
+				{% if now > release %}
+				
+				<div class="vote-item">
+					<div class="row">
+						<div class="col-md-10">
+							<div class="vote-actions">
+							</div>
+								<h2 class="tourdate" title="{{ post.when | date: "%-d %b %Y" }}">{{ post.when | date: "%-d %b %Y %R Uhr" }} {{ post.town }} @ {{ post.venue }}</h2>
+
+							<span class="vote-info"></span>{{ post.desc }}
+
+						</div>
+					</div>
+				</div>
+				  {% endif %}
+				{% endfor %}
+        </div>
+    </div>
+
+	<script>
+
+	var x = document.getElementsByClassName("tourdate");
+	var i;
+	
+	var cstamp = (new Date()).getTime();
+	for (i = 0; i < x.length; i++) {
+		var stamp = Date.parse(x[i].title);
+
+		if (stamp - cstamp > 0 && stamp - cstamp < 7776000000) {
+			x[i].classList.add('text-navy');
+			x[i].classList.add('font-bold');
+		}
+	}
+	</script>
+
+
+</div>

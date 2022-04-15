@@ -64,4 +64,10 @@ kramdown:
   input: GFM
   syntax_highlighter: rouge
 
+whitelist:
+  - jekyll-redirect-from
 
+plugins_dir: ./_scripts
+
+plugins:
+  - jekyll-redirect-from
