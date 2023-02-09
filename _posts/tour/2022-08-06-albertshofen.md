@@ -1,9 +1,9 @@
 ---
 layout: post
-town:  "Würzburg"
-venue: "B-Hof"
-when: 2022-07-01, 20:00 Uhr
-desc: Vintage Rock Fest Vol.1
+town:  "Albertshofen"
+venue: "318 Prowlers Festival"
+when: 2022-08-06, 20:00 Uhr
+desc:
 keywords: "Tour"
 category: tour
 date:   2020-10-28 		#publication date
