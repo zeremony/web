@@ -12,7 +12,7 @@ category: news
 
 Den Auftakt macht unser erstes Gig des Jahres: Das <b>Vintage Rock Fest</b> am <b>06.02.2026</b> im B-Hof Würzburg! Wir freuen uns auf einen Abend voller Vintage Rock mit The Strange Seeds und Jailjob Eve.
 
-<a href="/static/assets/img/landing/vrf-2026-02.jpg"><img src="/static/assets/img/landing/vrf-2026-02.jpg" height="700px" width="700px"/></a><br />
+<a href="/static/assets/img/landing/vrf-2026-02.jpg"><img src="/static/assets/img/landing/vrf-2026-02.jpg" width="500px" height="704px"/></a><br />
 
 Falls ihr einen Gig für uns habt oder uns einladen wollt, meldet euch gerne unter <a href="mailto:booking26@zeremony.de">booking26@zeremony.de</a> und wir versuchen euch in unseren Tourplan zu berücksichtigen.
 
