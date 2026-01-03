@@ -1,6 +1,6 @@
 ---
 layout: post
-town:  "Andorf"
+town:  "Dietenhofen"
 venue: "Biberttal Festival"
 when: 2023-05-28, 15:45 Uhr
 desc: 
