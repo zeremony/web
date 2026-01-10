@@ -14,6 +14,14 @@ permalink: /404.html
     <link href="{{ "/static/css/custom.css" | prepend: site.baseurl }}" rel="stylesheet">
 </head>
 <body class="gray-bg">
+    <script>
+        // Redirect /vrf?xxx to vrf.html?xxx
+        var path = window.location.pathname;
+        var search = window.location.search;
+        if (path === '/vrf' || path === '/vrf/') {
+            window.location.href = '/vrf.html' + search;
+        }
+    </script>
     <div class="middle-box text-center animated fadeInDown">
         <h1>404</h1>
         <h3 class="font-bold">Page Not Found</h3>
